@@ -60,7 +60,7 @@ AUTH_FRONTEGG_ISSUER="<https://[YOUR_SUBDOMAIN].frontegg.com>"
 
 ```ts filename="/auth.ts"
 import NextAuth from "next-auth"
-import Frontegg from "next-auth/providers/frontegg"
+import Frontegg from "@auth/core/providers/frontegg"
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [Frontegg],
